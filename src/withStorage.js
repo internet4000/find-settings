@@ -48,6 +48,7 @@ const withStorage = ExtendedComponent => (
 		}
 
 		render() {
+			if(!this.state) return <></>
 			return (
 				<ExtendedComponent
 					addEngine={this.addEngine}
