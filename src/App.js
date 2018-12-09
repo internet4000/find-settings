@@ -12,12 +12,6 @@ class App extends Component {
 	this.userSymbols = {}
     }
 
-    refreshSymbols(updatedUserSymbols) {
-	this.setState({
-	    userSymbols: updatedUserSymbols
-	})
-    }
-
     onAdd = (symbol, engineId, url) => {
 	this.props.addEngine(symbol, engineId, url)
     }

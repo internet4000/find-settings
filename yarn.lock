@@ -3899,9 +3899,9 @@ https-browserify@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
 
-i4k-find@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/i4k-find/-/i4k-find-0.0.2.tgz#4e1ce3e36a092203d4ec9eeb9712686c5dc83090"
+i4k-find@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/i4k-find/-/i4k-find-0.0.4.tgz#d2eddaeff0f3539ba8815a730b7e8b9f474dd60b"
 
 iconv-lite@0.4.23:
   version "0.4.23"
