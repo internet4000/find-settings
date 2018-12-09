@@ -26,7 +26,9 @@ class App extends Component {
 	    return (
 		<div className="App">
 		  <div className="App-header">
-		    <img src={logo} className="App-logo" alt="logo" />
+		    <a href="/" title="Go back to Find! action engine">
+		      <img src={logo} className="App-logo" alt="logo" />
+		    </a>
 		    <h2>Welcome to !Find settings</h2>
 		    <p>Explore and customize the available action engines.</p>
 		  </div>

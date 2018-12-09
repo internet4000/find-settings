@@ -23,7 +23,7 @@ class AddEngine extends Component {
 	const {id, url} = this.state
 
 	return (
-	    <article className="Engine Engine--add">
+	    <article className="Engine Engine--add" title="Add a new custom engine, with its id (!id) and url (the destination)">
 	      <input
 		placeholder="id"
 		className="Engine-id"
