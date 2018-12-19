@@ -1,22 +1,19 @@
 import React, { Component } from 'react'
 import Find from 'i4k-find'
-const {
-	symbols: defaultSymbols,
-	getUserSymbols,
-	setUserSymbols } = Find
 
 const withStorage = ExtendedComponent => (
 	class extends Component {
 		componentDidMount() {
+			const userSymbols = Find.getUserSymbols()
 			this.setState({
-				userSymbols: getUserSymbols(),
-				defaultSymbols: defaultSymbols
+				userSymbols,
+				defaultSymbols: Find.symbols
 			})
 		}
 
 		saveUserSymbols = newSymbols => {
 			if (!newSymbols) return
-			setUserSymbols(newSymbols)
+			Find.setUserSymbols(newSymbols)
 			this.setState({
 				userSymbols: newSymbols
 			})
