@@ -22,6 +22,16 @@ h1, h2, h3, h4, p {
 	max-width: 40rem;
 }
 
+.App-nav {
+	margin-bottom: 1rem;
+	display: flex;
+	justify-content: center;
+}
+.App-nav a {
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
 .App-header {
 	text-align: center;
 }

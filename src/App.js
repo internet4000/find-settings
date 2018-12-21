@@ -30,7 +30,12 @@ class App extends Component {
 		      <img src={logo} className="App-logo" alt="logo" />
 		    </a>
 		    <h2>Welcome to !Find settings</h2>
-		    <p>Explore and customize the available action engines.</p>
+				<nav className="App-nav">
+					<a href="/">&larr; Search</a>
+					<a href="https://github.com/internet4000/find">Source code</a>
+					<a href="https://github.com/internet4000/find/issues">Discussion</a>
+				</nav>
+		    <p>Explore and customize the available engines.</p>
 		  </div>
 
 		  <div className="App-body">
