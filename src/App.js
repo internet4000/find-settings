@@ -64,6 +64,9 @@ class App extends Component {
 							symbols={defaultSymbols}/>
 
 						<h2>& build</h2>
+						<AddEngine
+							symbol="&"
+							onAdd={onAdd}/>
 						<Symbols
 							symbol="&"
 							symbols={userSymbols}
