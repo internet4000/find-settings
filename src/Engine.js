@@ -15,7 +15,7 @@ var Engine = ({id, url, handleClick, handlesClick = false }) => {
 									onClick={(event) => {
 										event.preventDefault()
 										handleClick(id)
-					} }>Remove</button>}
+					} }>Delete</button>}
 		</form>
 	)
 }
