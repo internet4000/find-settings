@@ -22,6 +22,11 @@ const withStorage = ExtendedComponent => (
 		addEngine = (symbol, engineId, url) => {
 			if(!symbol || !engineId || !url) return false
 			let newSymbols = this.state.userSymbols
+			if(!newSymbols[symbol]) {
+				newSymbols[symbol] = {
+					engines: {}
+				}
+			}
 			newSymbols[symbol].engines[engineId] = url
 			this.saveUserSymbols(newSymbols)
 		}

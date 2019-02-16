@@ -13,7 +13,7 @@ var Symbols = ({symbols, symbol, onDelete}) => {
 						onDelete={(engineId) => onDelete(symbol, engineId)}
 						canDelete={canDelete}/>
 				) : (
-					<p>No custom engines are defined</p>
+					<p>No custom engines defined</p>
 				)
 			}
 		</div>

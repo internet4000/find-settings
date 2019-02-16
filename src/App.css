@@ -1,13 +1,29 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 :root {
 	--color-main: #80e5ff;
+	--color-second: darkorchid;
+	--color-text: black;
 }
 
 .App {
-	padding: 2rem;
 }
 
 h1, h2, h3, h4, p {
 	margin-top: 0;
+}
+button {
+	padding: 0.2rem;
+}
+
+input {
+	background-color: transparent;
+	max-width: 100%;
 }
 
 .App-logo {
@@ -22,14 +38,32 @@ h1, h2, h3, h4, p {
 	max-width: 40rem;
 }
 
+.App-body h2 {
+  position: sticky;
+  top: 0;
+	z-index: 1;
+	color: white;
+  background-color: var(--color-second);
+  padding: 0.4rem;
+  display: inline-block;
+}
+
 .App-nav {
 	margin-bottom: 1rem;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 }
 .App-nav a {
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: white;
+	padding: 0.4rem 0.6rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	margin-bottom: 0.5rem;
+	background-color: var(--color-second);
 }
 
 .App-header {
@@ -43,20 +77,40 @@ h1, h2, h3, h4, p {
 .Engine {
 	display: flex;
 	flex-direction: row;
-	wrap: nowrap;
+	flex-wrap: wrap;
 	padding: 0.5rem;
+
+	position: relative;
+}
+
+.Engine button {
+}
+
+.Engine--add {
+  flex-direction: column;
+	margin-bottom: 1rem;
+}
+.Engine--add input {
+	font-size: 1.3rem;
+	margin-bottom: 0.3rem;
+	border: 1px solid var(--color-second);
+	padding: 0.3rem 0.9rem;
 }
 .Engine:hover {
-	background-color: var(--color-main);
+	background-color: whitesmoke;
 }
 
 .Engine-id {
-	flex-grow: 1;
+	flex-grow: 0;
+	padding-right: 0.4rem;
+}
+.Engine:not(.Engine--add) .Engine-id {
 	font-size: 2rem;
-	max-width: 5rem;
-	margin-right: 2rem;
 }
 
 .Engine-url {
 	flex-grow: 1;
+	border: none;
+	padding: 0.2rem;
+	background-color: transaprent;
 }
